@@ -1,5 +1,9 @@
+import { base } from '$app/paths';
+
+// export const prerender = 'true';
+
 export const load = async ({ fetch }) => {
-  const response = await fetch(`/api/posts`)
+  const response = await fetch(`${base}/api/posts`)
   const posts = await response.json()
 
   return {

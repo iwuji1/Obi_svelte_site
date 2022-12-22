@@ -1,4 +1,5 @@
 <script>
+import { base } from '$app/paths';
 export let data
 </script>
 
@@ -118,17 +119,17 @@ h2 {
   <div class="side-bar">
     <h2 class="sb-title">Categories</h2>
       <ul>
-        <li class="side-link"><a href="/blog">All Writing</a></li>
-        <li class="side-link"><a href="/blog/category/Everyday">Everyday Writing</a></li>
-        <li class="side-link"><a href="/blog/category/Poetry">Feelings & Poetry</a></li>
-        <li class="side-link"><a href="/blog/category/Data">Data Stories</a></li>
+        <li class="side-link"><a href="{base}/blog">All Writing</a></li>
+        <li class="side-link"><a href="{base}/blog/category/Everyday">Everyday Writing</a></li>
+        <li class="side-link"><a href="{base}/blog/category/Poetry">Feelings & Poetry</a></li>
+        <li class="side-link"><a href="{base}/blog/category/Data">Data Stories</a></li>
       </ul>
 
     <h2 class="sb-title">More Links</h2>
       <ul>
-        <li class="side-link"><a href="/about">About Me</a></li>
-        <li class="side-link"><a href="/portfolio">Portfolio</a></li>
-        <li class="side-link"><a href="/now">Now Page</a></li>
+        <li class="side-link"><a href="{base}/about">About Me</a></li>
+        <li class="side-link"><a href="{base}/portfolio">Portfolio</a></li>
+        <li class="side-link"><a href="{base}/now">Now Page</a></li>
         <li class="side-link"><a href="#">Afripple</a></li>
       </ul>
   </div>

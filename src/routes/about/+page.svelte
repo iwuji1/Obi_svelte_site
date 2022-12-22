@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   import Profile from '$lib/assets/Obinna Home picture.jpg'
   import Afripple from '$lib/assets/Afripple logo.png'
   import DataStory from '$lib/assets/Data_stories.png'
@@ -147,7 +148,7 @@ h3 {
       <img class="card-img" src={DataStory} alt="Data Graphic">
     </div>
     <div class="proj-text">
-      <h3><a href="/blog/category/Data">Data Stories</a></h3>
+      <h3><a href="{base}/blog/category/Data">Data Stories</a></h3>
       <p class="text">For most of my professional life(Which is not very long at this point), I have been a data analyst.
       I like how data and visuals can help better understandings of complex issues whether that relates to
       revenue or migration patterns. I want to create more data stories to illuminate things I find interesting
@@ -176,7 +177,7 @@ h3 {
       <img class="card-img" src={Afripple} alt="Poetry image">
     </div>
     <div class="proj-text">
-      <h3><a href="/blog/category/Poetry">Writing/Poetry</a></h3>
+      <h3><a href="{base}/blog/category/Poetry">Writing/Poetry</a></h3>
       <p class="text">I am a self proclaimed writer & Poet! Here is a catalogue of my writing. It varies from
       funny to serious, life stories to random musings; all important for me to develop this
       practice so that one day I can go from self proclaimed to actual. Hope you enjoy</p>

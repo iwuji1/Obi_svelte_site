@@ -1,7 +1,8 @@
-import { importMarkdowns, convertToPostPreview } from "$lib/handle-markdown"
+import { importMarkdowns, convertToPostPreview } from "$lib/handle-markdown";
+import { base } from '$app/paths';
 
 // load all markdown files from the posts directory
-let postFiles = importMarkdowns("src/posts/")
+let postFiles = importMarkdowns("./posts/")
 
 export function get() {
     // convert the markdown to the required format

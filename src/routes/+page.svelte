@@ -1,4 +1,5 @@
 <script>
+import { base } from '$app/paths';
 import Banner from '$lib/assets/Face_chart cropped 2.png'
 import DataStory from '$lib/assets/Data_stories.png'
 import Writing from '$lib/assets/Daily Writing.jpeg'
@@ -200,9 +201,9 @@ h3 {
   <p>I have 3 main ways of doing this</p>
 
   <div class="midbar">
-    <div class="mid-link"><a href="/">Infographics</a></div>
-    <div class="mid-link"><a href="/">Spoken Word</a></div>
-    <div class="mid-link"><a href="/">Building Community</a></div>
+    <div class="mid-link"><a href="{base}/">Infographics</a></div>
+    <div class="mid-link"><a href="{base}/">Spoken Word</a></div>
+    <div class="mid-link"><a href="{base}/">Building Community</a></div>
   </div>
 
 </div>

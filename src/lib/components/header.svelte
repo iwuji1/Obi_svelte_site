@@ -1,3 +1,7 @@
+<script>
+import { base } from '$app/paths';
+</script>
+
 <style>
 header {
   background: black;
@@ -47,11 +51,11 @@ header {
 
 <header>
   <div class="navbar">
-    <a class="nav-link nav-link-ltr" href="/">Home</a>
-    <a class="nav-link nav-link-ltr" href="/about">About</a>
-    <a class="nav-link nav-link-ltr" href="/blog">Writing</a>
-    <a class="nav-link nav-link-ltr" href="/now">Now Page</a>
-    <a class="nav-link nav-link-ltr" href="/portfolio">Portfolio</a>
-    <a class="nav-link nav-link-ltr" href="/contact">Contact</a>
+    <a class="nav-link nav-link-ltr" href="{base}/">Home</a>
+    <a class="nav-link nav-link-ltr" href="{base}/about">About</a>
+    <a class="nav-link nav-link-ltr" href="{base}/blog">Writing</a>
+    <a class="nav-link nav-link-ltr" href="{base}/now">Now Page</a>
+    <a class="nav-link nav-link-ltr" href="{base}/portfolio">Portfolio</a>
+    <a class="nav-link nav-link-ltr" href="{base}/contact">Contact</a>
   </div>
 </header>

@@ -1,3 +1,6 @@
+<script>
+import { base } from '$app/paths';
+</script>
 <style>
 
 /* overall footer rules */
@@ -103,25 +106,25 @@ body {
     <div class="ft-main-item">
       <h2 class="ft-title">About</h2>
       <ul>
-        <li><a href="/about">About Me</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/now">Now Page</a></li>
+        <li><a href="{base}/about">About Me</a></li>
+        <li><a href="{base}/portfolio">Portfolio</a></li>
+        <li><a href="{base}/now">Now Page</a></li>
         <li><a href="https://afripple.co.uk/">Afripple</a></li>
       </ul>
     </div>
     <div class="ft-main-item">
       <h2 class="ft-title">Resources</h2>
       <ul>
-        <li><a href="/blog">All Writing</a></li>
-        <li><a href="/blog/category/Everyday">Everyday Writing</a></li>
-        <li><a href="/blog/category/Poetry">Feelings & Poetry</a></li>
-        <li><a href="/blog/category/Data">Data Stories</a></li>
+        <li><a href="{base}/blog">All Writing</a></li>
+        <li><a href="{base}/blog/category/Everyday">Everyday Writing</a></li>
+        <li><a href="{base}/blog/category/Poetry">Feelings & Poetry</a></li>
+        <li><a href="{base}/blog/category/Data">Data Stories</a></li>
       </ul>
     </div>
     <div class="ft-main-item">
       <h2 class="ft-title">Contact</h2>
       <ul>
-        <li><a href="/contact">Contact Me</a></li>
+        <li><a href="{base}/contact">Contact Me</a></li>
       </ul>
     </div>
     <div class="ft-main-item">

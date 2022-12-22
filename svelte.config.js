@@ -5,7 +5,19 @@ import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	kit: {adapter: adapter()},
+	kit: {
+		paths: {
+		  base: "/Obi_svelte_site",
+		  assets: ""
+		},
+		prerender: {
+			crawl: true,
+			entries: [
+				'*',
+				'/blog/'
+			],
+		},
+		adapter: adapter()},
 	extensions: ['.svelte', '.md'],
 	preprocess: [sveltePreprocess(),mdsvex({
       extensions: ['.md']
