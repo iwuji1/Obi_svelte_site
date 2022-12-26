@@ -6,7 +6,7 @@ categories:
   - "Me"
   - "Poetry"
 description: This is a short desription test
-image: "/src/lib/assets/mini-logo.png"
+image: "/assets/mini-logo.png"
 ---
 I’ve always been a very touchy feely type of person. I’m very much in touch with my emotions and tend to really dive deep into how I am feeling at a time. This can be both good and bad as when I’m on a high, I am on a real high but when I’m low I tend to spiral.
 

@@ -5,7 +5,7 @@ date:   2021-05-27 22:40:01 +0100
 categories:
   - "Everyday"
 description: This is a short desription test
-image: "/src/lib/assets/mini-logo.png"
+image: "/assets/mini-logo.png"
 ---
 
 It happened again!! I really hope this is just a phase!!

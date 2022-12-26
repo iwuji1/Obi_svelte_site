@@ -5,7 +5,7 @@ date:   2021-05-27 22:40:01 +0100
 categories:
   - "Everyday"
 description: This is a short desription test
-image: "/src/lib/assets/mini-logo.png"
+image: "/assets/mini-logo.png"
 ---
 
 A question I get asked every now and then is what type of Christian are you? Now you may be wondering, who on earth would ask you such a personal question? Who would be that nosey?

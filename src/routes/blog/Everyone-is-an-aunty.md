@@ -5,7 +5,7 @@ date:   2021-05-27 22:40:01 +0100
 categories:
   - "Everyday"
 description: This is a short desription test
-image: "/src/lib/assets/mini-logo.png"
+image: "/assets/mini-logo.png"
 ---
 
 So...I was talking to my mum a couple of weeks ago and she was telling me about her time at a family gathering. Now just for some context, I would compare my family to a blow pop or a lollipop. At the center, is the core family, the people who you actually know and want to get to. But, to get there you need to lick through layers of excess family.
