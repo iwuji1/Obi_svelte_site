@@ -121,7 +121,7 @@
       <p> As part of the launch of Happy man foods, I created a custom web experience,
       for customers to buy food and explore the services of the happyman. In addition, I created
       a custom explainer video called #FoodisNotLuxury</p>
-      <a href="www.happymanfoods.com"><button class="button-28" role="button">Go to Site</button></a>
+      <a href="https://www.happymanfoods.com"><button class="button-28" role="button">Go to Site</button></a>
     </div>
     <div class="mid-img">
       <img class="card-img" src={HM} alt="HM_image">
