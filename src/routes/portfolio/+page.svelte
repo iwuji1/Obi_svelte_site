@@ -2,11 +2,68 @@
   import HM from '$lib/assets/Happyman_PC-2.jpg'
   import africatime from '$lib/assets/Africa_independence_1.jpeg'
   import military from '$lib/assets/Military spending banner.png'
-  import { gsap } from "gsap/dist/gsap";
-  import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+  // import { gsap } from "gsap/dist/gsap";
+  // import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+  import gsap from 'gsap';
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  import { onMount } from 'svelte';
 
-  gsap.registerPlugin(ScrollTrigger);
+  onMount(() => {
 
+    ScrollTrigger.defaults({
+      toggleActions: "restart pause resume pause",
+      scroller: ".container"
+    });
+
+    gsap.to(".circle-1", {
+      scrollTrigger: ".circle-1",
+      duration: 2,
+      x: -200,
+      repeat: -1,
+      yoyo: true,
+    });
+
+    gsap.to(".circle-2", {
+      scrollTrigger: ".circle-2",
+      duration: 2,
+      x: 200,
+      repeat: -1,
+      yoyo: true,
+
+    });
+
+    gsap.to(".circle-3", {
+      scrollTrigger: ".circle-3",
+      duration: 2,
+      y: 100,
+      repeat: -1,
+      yoyo: true,
+
+    });
+
+    gsap.to(".circle-4", {
+      scrollTrigger: ".circle-4",
+      duration: 2,
+      y: -100,
+      repeat: -1,
+      yoyo: true,
+
+    });
+
+    gsap.to(".circle-4", {
+      scrollTrigger: {
+        trigger: "section .panel .timeline",
+        toggleClass: "active",
+      },
+      duration: .5,
+      fill: "#FFA500",
+      ease: "none"
+    });
+
+
+
+
+});
 
 </script>
 
@@ -71,13 +128,17 @@
   scroll-snap-type: y mandatory;
 }
 
-.mid-text {
-  flex: 30%;
-  text-align: center;
+.mid-sec {
+  flex: 50%;
+  text-align: right;
+  padding-right: 2%;
+  line-height: 1.6;
+  z-index: 5;
 }
 
 .mid-img {
   flex: 100%;
+  z-index: 5;
 }
 
 .card-img {
@@ -113,7 +174,29 @@
   color: #ffffff;
 }
 
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+.section-background {
+  color: #999999;
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  height: 100%;
+  width: 50%;
+}
+
+svg {
+  stroke: none;
+  position: absolute;
+}
+
 </style>
+
 <div class="container">
   <section class="panel happyman">
   	<div class="mid-sec">
@@ -125,6 +208,14 @@
     </div>
     <div class="mid-img">
       <img class="card-img" src={HM} alt="HM_image">
+    </div>
+    <div class="section-background">
+      <svg width="100%" height="100%">
+        <circle class= "circle-4" cx="70%" cy="55%" r="200" fill="#20A001" />
+        <circle class= "circle-3" cx="40%" cy="50%" r="200" fill="#20A001" />
+        <circle class= "circle-2" cx="50%" cy="68%" r="200" fill="#20A001" />
+        <circle class= "circle-1" cx="70%" cy="38%" r="200" fill="#20A001" />
+      </svg>
     </div>
   </section>
   <section class="panel timeline">
