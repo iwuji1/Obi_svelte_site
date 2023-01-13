@@ -77,10 +77,10 @@
 .button-28 {
   appearance: none;
   background-color: transparent;
-  border: 2px solid #1A1A1A;
+  border: 2px solid #ffffff;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #3B3B3B;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -106,8 +106,8 @@
 }
 
 .button-28:hover {
-  color: #fff;
-  background-color: #1A1A1A;
+  color: #1A1A1A;
+  background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
@@ -204,6 +204,21 @@ svg {
       <p> As part of the launch of Happy man foods, I created a custom web experience,
       for customers to buy food and explore the services of the happyman. In addition, I created
       a custom explainer video called #FoodisNotLuxury</p>
+
+      <p>I designed and developed this website for Happy man foods as part of their launch for
+      their online store and non profit. I also made an motion graphic video to illustrate the mission.</p>
+      <p>The founder of the company had at that been using Instagram to create content and drive sales.
+      He had reached a point where he was looking to get his products in larger stores and increase his
+      consumer base. Hence he reached out to me, to create a website that would both be a house for the
+      content as well as a place to host the sales of his product. He also wanted to do research into
+      food insecurity and the like under a non profit called #foodisnotluxury.</p>
+      <p>I used Figma to consolidate his design system and create multiple drafts
+      and prototypes of what the website would look like. Having received all the assets
+      I then went on the build website, creating the ecommerce store and all the accompany pages.
+      I created an infographic video from scratch creating all the assets between illustrator and
+      after effects.</p>
+
+      <h4>Tools: Figma, Aftereffects, WordPress, Illustrator</h4>
       <a href="https://www.happymanfoods.com"><button class="button-28" role="button">Go to Site</button></a>
     </div>
     <div class="mid-img">
@@ -223,6 +238,13 @@ svg {
       <h1>African Independence Timeline</h1>
       <p> When you research facts about the continent of Africa, many of the webpages tend to be bland and static.
       Through this project I attempted to remodel a standard table of African independence into something a bit more interactive</p>
+
+      <p>Through this project I attempted to remodel a standard table of African independence I found on a webpage into a scrolly story.</p>
+
+      <p>During this project I used GSAP to handle the animations on the pages as well as scroll triggers to trigger animations on the
+      page. I shared the content on my blog and got positive feedback as well as ways I can take the graphic further on the next iteration.</p>
+
+      <h4>Tools: D3, Javascript, SvelteKit, Illustrator</h4>
       <a href="https://iwuji1.github.io/African-Independence-Timeline/"><button class="button-28" role="button">Go to Site</button></a>
     </div>
     <div class="mid-img">
@@ -235,6 +257,8 @@ svg {
       <p> As a way to upskill I took a course on visual communication, from award-wining designer Valentino D'fillipo
       It was very insightful using design principles to better highlight and organize date & information. The result
       was the following graphic</p>
+
+      <h4>Tools: Illustrator, Flourish</h4>
       <a href="https://afripple.co.uk/african-military-spending-2022/"><button class="button-28" role="button">Go to Site</button></a>
     </div>
     <div class="mid-img">
