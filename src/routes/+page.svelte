@@ -187,7 +187,7 @@ h3 {
 
 <div class="title-container">
   <div class="flex-title">
-    <h2> <span style="background-color: #FF6600"><strong>Hi, I'm Obinna.</strong></span>I'm a writer with a love for technology </h2>
+    <h2> <span style="background-color: #FF6600"><strong>Hi, I'm Obinna.</strong></span> A writer with a love for technology </h2>
   </div>
   <div class="flex-image">
   <img class="banner-img" src={Banner} alt="Obinna_mic">
@@ -196,8 +196,7 @@ h3 {
 
 <!-- Brief intro and into about me 1st draft -->
 <div class="sec-1-container">
-  <h3>I'm in the business of telling stories & shifting perspectives</h3>
-  <p>I have 3 main ways of doing this</p>
+  <h3>In the business of telling stories & shifting perspectives through</h3>
 
   <div class="midbar">
     <div class="mid-link"><a href="/">Infographics</a></div>
@@ -211,8 +210,8 @@ h3 {
 <div class="sec-2-container">
   <div class="mid-text-flex">
   <h3>Data Stories & Infographics</h3>
-  <p> I am addicted to explainer videos and general content that seeks to breakdown how the world works.
-  After being addicted to bbc biteseize growing up, I make my own graphics and web experiences to describe the world we live in using data.
+  <p> Explainer videos are the best! In general I'm a fan of content that seeks to breakdown how the world works.
+  Moving from consumer to producer, I make my own graphics and web experiences to describe the world we live in using data.
   Check out my catelog so far! </p>
   </div>
   <div class="mid-image-flex">
@@ -225,9 +224,7 @@ h3 {
   </div>
   <div class="mid-text-flex">
   <h3>Feelings & Poetry</h3>
-  <p> I am addicted to explainer videos and general content that seeks to breakdown how the world works.
-  After being addicted to bbc biteseize growing up, I make my own graphics and web experiences to describe the world we live in using data.
-  Check out my catelog so far! </p>
+  <p> A self proclaimed writer & poet. I right reflections from my podcast as well as poetry centred the process of making progress</p>
   </div>
 </div>
 

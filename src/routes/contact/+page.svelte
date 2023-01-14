@@ -48,10 +48,8 @@ input[type=submit]:hover {
 
 <h3>Contact Form</h3>
 
-<p> Form is not fully working as of yet </p>
-
 <div class="container">
-  <form action="/action_page.php">
+  <form action="mailto:obinnaops@gmail.com" method="post" enctype="text/plain">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 

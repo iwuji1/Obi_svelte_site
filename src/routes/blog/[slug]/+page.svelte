@@ -60,7 +60,7 @@ h2 {
 
 
   .posts {
-    width: 70%;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
     margin-left: 25%;
@@ -85,6 +85,7 @@ h2 {
   }
 
   .feat-img {
+    padding-top: 5%;
     width: 100%;
   }
 
@@ -114,7 +115,7 @@ h2 {
         <li class="side-link"><a href="#">Afripple</a></li>
       </ul>
   </div>
-  <div class="post">
+  <div class="posts">
     <article>
       <img class="feat-img" src={data.image} alt="Featured_image">
       <h1 class="banner">{ data.title }</h1>
