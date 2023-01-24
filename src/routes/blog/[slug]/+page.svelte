@@ -67,6 +67,34 @@ h2 {
     /* margin-right: 15%; */
   }
 
+  @media screen and (max-width:800px) {
+    .posts {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      margin:auto;
+    }
+
+    .post {
+      flex: 100%;
+    }
+
+    .side-bar {
+      visibility: hidden;
+    }
+
+    .post-img {
+      height: 100%;
+      width: auto;
+    }
+
+    .feat-img {
+      width: 50%;
+      height: auto;
+    }
+
+  }
+
   .post {
     flex: 30.333%;
     padding: 2%;

@@ -123,7 +123,6 @@
 }
 
 .container {
-  max-height: 100vh;
 	overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
@@ -144,6 +143,62 @@
 .card-img {
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width:900px) {
+
+  section.panel.happyman {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  section.panel.timeline {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  section.panel.design-course {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  section.panel.happyman {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .happyman {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .timeline {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .design-course {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mid-sec {
+    flex: 100%;
+    text-align: center;
+    font-size: 35px;
+    padding: 0;
+    z-index: 0;
+  }
+
+  .mid-img {
+    flex: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+
+  svg {
+    visibility: hidden;
+  }
 
 }
 
@@ -204,6 +259,7 @@ svg {
       <p> As part of the launch of Happy man foods, I created a custom web experience,
       for customers to buy food and explore the services of the happyman. In addition, I created
       a custom explainer video called #FoodisNotLuxury</p>
+      <h4>Tools: Squarespace, Figma, Adobe After E</h4>
       <a href="https://www.happymanfoods.com"><button class="button-28" role="button">Go to Site</button></a>
       <a href="/blog/Happyman-process"><button class="button-28" role="button">The process</button></a>
     </div>
@@ -224,7 +280,8 @@ svg {
       <h1>African Independence Timeline</h1>
       <p> When you research facts about the continent of Africa, many of the webpages tend to be bland and static.
       Through this project I attempted to remodel a standard table of African independence into something a bit more interactive</p>
-      <a href="https://iwuji1.github.io/African-Independence-Timeline/"><button class="button-28" role="button">Go to Site</button></a>
+      <h4>Tools: Svelte, Illustrator, D3, GSAP, javascript</h4>
+      <a href="https://joyful-starburst-06408d.netlify.app/"><button class="button-28" role="button">Go to Site</button></a>
       <a href="/blog/Africa-timeline-process"><button class="button-28" role="button">The Process</button></a>
     </div>
     <div class="mid-img">

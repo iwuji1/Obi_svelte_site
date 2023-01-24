@@ -6,7 +6,7 @@ categories:
 description: This description of the process and technology I used to create the Africa Independence timeline
 image: "/assets/Africa_independence_1.jpeg"
 ---
-Here is the link to the site: https://iwuji1.github.io/African-Independence-Timeline/
+Here is the link to the site: https://joyful-starburst-06408d.netlify.app/
 
 ## Summary of the project
 
@@ -20,6 +20,6 @@ Through this project I attempted to remodel a standard table of African independ
 
 During this project I used GSAP to handle the animations on the pages as well as scroll triggers to trigger animations on the page. I shared the content on my blog and got positive feedback as well as ways I can take the graphic further on the next iteration.
 
-***Tools: D3, Javascript, SvelteKit, Illustrator***
+***Tools: D3, Javascript, SvelteKit, GSAP, Illustrator***
 
-Here is the link to the site: https://iwuji1.github.io/African-Independence-Timeline/
+Here is the link to the site: https://joyful-starburst-06408d.netlify.app/
