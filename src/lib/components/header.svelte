@@ -43,13 +43,59 @@ header {
   width: 100%;
 }
 
+.dropdown {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px 0px;
+  margin: 0px 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  opacity: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  opacity: 1;
+}
+
+.dropdown-content a:hover {
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
 
 <header>
   <div class="navbar">
     <a class="nav-link nav-link-ltr" href="/">Home</a>
     <a class="nav-link nav-link-ltr" href="/about">About</a>
-    <a class="nav-link nav-link-ltr" href="/blog">Writing</a>
+    <!-- <a class="nav-link nav-link-ltr" href="/blog">Writing</a> -->
+    <div class="dropdown">
+      Writing
+      <div class="dropdown-content">
+        <a class="nav-link nav-link-ltr" href="/blog">All Writing</a>
+        <a class="nav-link nav-link-ltr"href="/blog/category/Everyday">Everyday Writing</a>
+        <a class="nav-link nav-link-ltr"href="/blog/category/Poetry">Feelings & Poetry</a>
+        <a class="nav-link nav-link-ltr"href="/blog/category/Data">Data Stories</a>
+      </div>
+    </div>
     <a class="nav-link nav-link-ltr" href="/now">Now Page</a>
     <a class="nav-link nav-link-ltr" href="/portfolio">Portfolio</a>
     <a class="nav-link nav-link-ltr" href="/contact">Contact</a>
