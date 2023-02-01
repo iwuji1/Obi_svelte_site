@@ -130,7 +130,7 @@ body {
         <li><a href="#">Instagram</a></li>
         <li><a href="https://github.com/iwuji1">Github</a></li>
         <li><a href="https://www.linkedin.com/in/obinnaiwuji/">LinkedIn</a></li>
-        <li><a href="https://studio.youtube.com/channel/UCv9oSIKjvzJYpICLBuAaVOw/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D">Youtube</a></li>
+        <li><a href="https://www.youtube.com/channel/UCv9oSIKjvzJYpICLBuAaVOw">Youtube</a></li>
       </ul>
 
       <!-- <form>

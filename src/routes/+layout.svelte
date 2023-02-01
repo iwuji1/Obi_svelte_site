@@ -1,6 +1,7 @@
 <script>
 import Header from '$lib/components/header.svelte'
 import Footer from '$lib/components/footer.svelte'
+import Analytics from '$lib/components/analytics.svelte'
 import '$lib/styles/style.scss'
 </script>
 
@@ -32,6 +33,7 @@ h1 {
 </style>
 
 <Header />
+<Analytics />
 
 <div class="container">
 <slot></slot>

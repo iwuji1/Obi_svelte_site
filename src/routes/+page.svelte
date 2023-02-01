@@ -127,6 +127,7 @@ h3 {
 
 .page-img {
   width: 100%;
+  border-radius: 20px;
 }
 
 .sec-3-container {
@@ -195,7 +196,7 @@ h3 {
 </div>
 
 <!-- Brief intro and into about me 1st draft -->
-<div class="sec-1-container">
+<!-- <div class="sec-1-container">
   <h3>In the business of telling stories & shifting perspectives through</h3>
 
   <div class="midbar">
@@ -204,10 +205,10 @@ h3 {
     <div class="mid-link"><a href="/">Building Community</a></div>
   </div>
 
-</div>
+</div> -->
 
 <!-- The 2 inside page bars -->
-<div class="sec-2-container">
+<!-- <div class="sec-2-container">
   <div class="mid-text-flex">
   <h3>Data Stories & Infographics</h3>
   <p> Explainer videos are the best! In general I'm a fan of content that seeks to breakdown how the world works.
@@ -226,16 +227,20 @@ h3 {
   <h3>Feelings & Poetry</h3>
   <p> A self proclaimed writer & poet. I right reflections from my podcast as well as poetry centred the process of making progress</p>
   </div>
-</div>
+</div> -->
 
 <!-- triple column section -->
+<div class="sec-1-container">
+<h3> Things I'm working on </h3>
+</div>
+
 <div class="sec-4-container">
   <div class="sec-item">
     <div class="mid-image-flex">
-      <img class="page-img" src={Afripple} alt="Writing_graphic">
+      <img class="page-img" src={Afripple} alt="Writing_graphic" href="https://afripple.co.uk/">
     </div>
     <div class="mid-text-flex">
-      <h3>Podcast</h3>
+      <h3><a href="https://afripple.co.uk/">Podcast</a></h3>
       <p>I talk alot! It's a hobby if I'm honest. A good chunk of that is asking questions both to google and actual people.
       When I first graduated from University a big question is how does life actually work for people like me. Afripple is a blog
       dedicated to the everyday stories of Africans living outside of their home country. If you are as curious as I am about
@@ -253,10 +258,10 @@ h3 {
   </div>
   <div class="sec-item">
     <div class="mid-image-flex">
-      <img class="page-img" src={Explainer} alt="Writing_graphic">
+      <img class="page-img" src={Explainer} alt="Writing_graphic" href="https://www.youtube.com/channel/UCv9oSIKjvzJYpICLBuAaVOw">
     </div>
     <div class="mid-text-flex">
-      <h3>Check out my explainer website</h3>
+      <h3><a href="https://www.youtube.com/channel/UCv9oSIKjvzJYpICLBuAaVOw">Check out my explainer website</a></h3>
       <p>I make explainer videos talking about different topics in relation to Africa.
       <br>
       From history to economics or honestly whatever I can think of. It's a bit weird
