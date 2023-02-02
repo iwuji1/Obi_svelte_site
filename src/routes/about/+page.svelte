@@ -84,7 +84,7 @@ h3 {
 .card-img {
   width: 100%;
   height: auto;
-
+  border-radius: 5%;
 }
 
 .proj-text {
@@ -160,7 +160,7 @@ h3 {
       <img class="card-img" src={Explainer} alt="Africa Explainer Banner">
     </div>
     <div class="proj-text">
-      <h3><a>Youtube Channel</a></h3>
+      <h3><a href="https://www.youtube.com/channel/UCv9oSIKjvzJYpICLBuAaVOw">Youtube Channel</a></h3>
       <p class="text">I make explainer videos talking about different topics in relation to Africa.
       <br>
       <br>
