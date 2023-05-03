@@ -13,6 +13,10 @@ import Logo from '$lib/assets/mini-logo.png'
 
 <style>
 
+* {
+  font-family: sans-serif;
+}
+
 .title-container {
   display: flex;
   flex-wrap: wrap;
@@ -24,6 +28,13 @@ import Logo from '$lib/assets/mini-logo.png'
 .flex-title {
   flex: 35%;
   align-self: center;
+  animation-name: title-ani;
+  animation-duration: 2s;
+}
+
+@keyframes title-ani {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
 }
 
 .flex-image {
