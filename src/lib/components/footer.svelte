@@ -156,7 +156,7 @@ body {
       <li><a href="#">Terms &amp; Conditions</a></li>
       <li><a href="#">Privacy Policy</a></li>
       <li>© 2022 Obinna Iwuji</li>
-      <li>Made with SvelteKit, hosted on Gitpages</li>
+      <li>Made with SvelteKit, hosted on Netlify</li>
     </ul>
   </section>
 </footer>

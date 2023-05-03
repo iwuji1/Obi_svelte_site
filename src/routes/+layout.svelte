@@ -7,6 +7,11 @@ import '$lib/styles/style.scss'
 
 <style>
 
+* {
+  font-family: sans-serif;
+  background-color: #000000;
+}
+
 .container {
   }
 

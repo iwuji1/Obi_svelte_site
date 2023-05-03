@@ -13,10 +13,6 @@ import Logo from '$lib/assets/mini-logo.png'
 
 <style>
 
-* {
-  font-family: sans-serif;
-}
-
 .title-container {
   display: flex;
   flex-wrap: wrap;
@@ -27,20 +23,62 @@ import Logo from '$lib/assets/mini-logo.png'
 
 .flex-title {
   flex: 35%;
+  position: relative;
   align-self: center;
-  animation-name: title-ani;
-  animation-duration: 2s;
+  animation: title-ani 1s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+/* style="background-color: #FF6600" */
+
+/* #highlight {
+  background-color: #FF6600;
+  animation: lit 0.5s forwards;
+  animation-delay: 1s;
+} */
+
+mark {
+  color: #ffffff;
+  animation: 1s lit 0.5s 1 normal forwards;
+  background-color: none;
+  background: linear-gradient(90deg, #FF6600 50%, rgba(0, 0, 0, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
 }
 
 @keyframes title-ani {
-  from {opacity: 0%;}
-  to {opacity: 100%;}
+  0% {
+    left: -20%;
+    opacity: 0%;
+  }
+
+  100% {
+    left: 0%;
+    opacity: 100%;
+  }
+}
+
+@keyframes lit {
+  to {
+      background-position: 0 0;
+    }
 }
 
 .flex-image {
   flex:50%;
   padding-left: 5px;
   margin: 0%;
+  animation: scale-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@keyframes scale-in {
+  0% {
+  transform: scaleX(0);
+  opacity: 1;
+}
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
 }
 
 .banner-img {
@@ -84,35 +122,7 @@ h3 {
 
 .sec-1-container {
   text-align: center;
-  background-color: #ffffff;
   font-size: 38px;
-}
-
-
-.mid-link {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 25px;
-  color: #000000;
-  padding: 20px 0px;
-  margin: 0px 20px;
-  text-transform: uppercase;
-  align-items: center;
-}
-
-.mid-link a{
-  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%,#FF6600 50%);
-  background-position: -0% 0;
-  background-size: 200% auto;
-  color: #000000;
-  text-decoration: none;
-  transition: background-position 200ms ease-out;
-
-}
-
-.mid-link a:hover {
-  background-position: -99.99% 0;
-  color: #ffffff;
 }
 
 .sec-2-container {
@@ -126,19 +136,40 @@ h3 {
 .mid-text-flex {
   flex:50%;
   text-align: left;
-  padding: 5%;
   font-size: 20px;
   font-weight: 300;
+  align-self: center;
+  justify-content: center;
+  padding-left: 15%;
+  padding-right: 5%;
+}
+
+.mid-text-flex p {
+  color: #ffffff;
+}
+
+.mid-text-flex a {
+  color: #FF6600;
 }
 
 .mid-image-flex {
-  flex:30%;
+  flex:50%;
   align-self: center;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .page-img {
-  width: 100%;
+  width: 70%;
   border-radius: 20px;
+  transition: transform .4s;
+  overflow: hidden;
+}
+
+.page-img:hover {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
 }
 
 .sec-3-container {
@@ -158,11 +189,12 @@ h3 {
 
   .mid-text-flex {
     text-align: center;
+    padding: 0;
   }
 
   .mid-image-flex {
-    flex: 100%;
-    align-self: center;
+    /* flex: 50%; */
+    /* align-self: center; */
   }
 
   .page-img {
@@ -173,14 +205,16 @@ h3 {
 
 .sec-4-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sec-item {
-  flex: 20%;
+  display: flex;
+  flex-direction: row-reverse;
   width: 100%;
-  margin: 1%;
+  height: auto;
+  margin: 2%;
 }
 
 @media screen and (max-width:800px) {
@@ -189,9 +223,14 @@ h3 {
   }
 
   .sec-item {
-    width: 100%;
+    width: 100vw;
     height: auto;
     margin: 0%;
+    flex-direction: column;
+  }
+
+  .page-img {
+    border-radius: 0px;
   }
 }
 
@@ -199,46 +238,12 @@ h3 {
 
 <div class="title-container">
   <div class="flex-title">
-    <h2> <span style="background-color: #FF6600"><strong>Hi, I'm Obinna.</strong></span> A writer with a love for technology </h2>
+    <h2> <mark><strong>Hi, I'm Obinna.</strong></mark> A writer with a love for technology </h2>
   </div>
   <div class="flex-image">
   <img class="banner-img" src={Banner} alt="Obinna_mic">
   </div>
 </div>
-
-<!-- Brief intro and into about me 1st draft -->
-<!-- <div class="sec-1-container">
-  <h3>In the business of telling stories & shifting perspectives through</h3>
-
-  <div class="midbar">
-    <div class="mid-link"><a href="/">Infographics</a></div>
-    <div class="mid-link"><a href="/">Spoken Word</a></div>
-    <div class="mid-link"><a href="/">Building Community</a></div>
-  </div>
-
-</div> -->
-
-<!-- The 2 inside page bars -->
-<!-- <div class="sec-2-container">
-  <div class="mid-text-flex">
-  <h3>Data Stories & Infographics</h3>
-  <p> Explainer videos are the best! In general I'm a fan of content that seeks to breakdown how the world works.
-  Moving from consumer to producer, I make my own graphics and web experiences to describe the world we live in using data.
-  Check out my catelog so far! </p>
-  </div>
-  <div class="mid-image-flex">
-    <img class="page-img" src={DataStory} alt="Data_story_graphic">
-  </div>
-</div>
-<div class="sec-3-container">
-  <div class="mid-image-flex">
-    <img class="page-img" src={Writing} alt="Writing_graphic">
-  </div>
-  <div class="mid-text-flex">
-  <h3>Feelings & Poetry</h3>
-  <p> A self proclaimed writer & poet. I right reflections from my podcast as well as poetry centred the process of making progress</p>
-  </div>
-</div> -->
 
 <!-- triple column section -->
 <div class="sec-1-container">
@@ -252,9 +257,7 @@ h3 {
     </div>
     <div class="mid-text-flex">
       <h3><a href="https://afripple.co.uk/">Podcast</a></h3>
-      <p>I talk alot! It's a hobby if I'm honest. A good chunk of that is asking questions both to google and actual people.
-      When I first graduated from University a big question is how does life actually work for people like me. Afripple is a blog
-      dedicated to the everyday stories of Africans living outside of their home country. If you are as curious as I am about
+      <p> Afripple is a podcast dedicated to the everyday stories of Africans living outside of their home country. If you are as curious as I am about
       about other people's business this could be a good resource for you</p>
     </div>
   </div>
@@ -263,7 +266,7 @@ h3 {
       <img class="page-img" src={Logo} alt="Writing_graphic">
     </div>
     <div class="mid-text-flex">
-      <h3>Book on the way</h3>
+      <h3><a href="#">Book on the way</a></h3>
       <p>A book about finding my voice through poetry and getting out there</p>
     </div>
   </div>
@@ -273,12 +276,7 @@ h3 {
     </div>
     <div class="mid-text-flex">
       <h3><a href="https://www.youtube.com/channel/UCv9oSIKjvzJYpICLBuAaVOw">Check out my explainer website</a></h3>
-      <p>I make explainer videos talking about different topics in relation to Africa.
-      <br>
-      From history to economics or honestly whatever I can think of. It's a bit weird
-      that as much I identify as Nigerian I don't know that much about my country or those surrounding me.
-      <br>
-      This is an attempt to rectify that in a fun way. Thus the birth of the African Explainer :D</p>
+      <p>I make explainer videos talking about different topics in relation to Africa.</p>
     </div>
   </div>
 </div>
