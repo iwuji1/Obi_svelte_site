@@ -1,6 +1,6 @@
 <style>
 header {
-  background: black;
+  background: white;
 }
 
 .navbar {
@@ -14,7 +14,7 @@ header {
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   padding: 20px 0px;
   margin: 0px 20px;
   display: inline-block;
@@ -48,7 +48,7 @@ header {
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   padding: 20px 0px;
   margin: 0px 20px;
 }
@@ -56,7 +56,7 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #000000;
+  background-color: #ffffff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -65,7 +65,7 @@ header {
 
 .dropdown-content a {
   float: none;
-  color: #ffffff;
+  color: #000000;
   padding: 12px 16px;
   text-decoration: none;
   display: block;

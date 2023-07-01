@@ -2,9 +2,15 @@
 import Banner from '$lib/assets/Face_chart cropped 2.png'
 import DataStory from '$lib/assets/Data_stories.png'
 import Writing from '$lib/assets/Daily Writing.jpeg'
-import Afripple from '$lib/assets/Afripple logo.png'
+import Afripple from '$lib/assets/Afripple logo v2.png'
 import Explainer from '$lib/assets/Africa Explainer.png'
 import Logo from '$lib/assets/mini-logo.png'
+
+import { onMount } from 'svelte';
+import { fly } from 'svelte/transition';
+
+let ready = false;
+onMount(() => ready = true);
 </script>
 
 <svelte:head>
@@ -25,7 +31,7 @@ import Logo from '$lib/assets/mini-logo.png'
   flex: 35%;
   position: relative;
   align-self: center;
-  animation: title-ani 1s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  /* animation: title-ani 1s cubic-bezier(0.230, 1.000, 0.320, 1.000); */
 }
 
 /* style="background-color: #FF6600" */
@@ -45,7 +51,7 @@ mark {
   background-position: 100% 0;
 }
 
-@keyframes title-ani {
+/* @keyframes title-ani {
   0% {
     left: -20%;
     opacity: 0%;
@@ -61,16 +67,16 @@ mark {
   to {
       background-position: 0 0;
     }
-}
+} */
 
 .flex-image {
   flex:50%;
   padding-left: 5px;
   margin: 0%;
-  animation: scale-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  /* animation: scale-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940); */
 }
 
-@keyframes scale-in {
+/* @keyframes scale-in {
   0% {
   transform: scaleX(0);
   opacity: 1;
@@ -79,7 +85,7 @@ mark {
     transform: scaleX(1);
     opacity: 1;
   }
-}
+} */
 
 .banner-img {
   width: 100%;
@@ -129,7 +135,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   color: white;
-  background-color: #000000;
+  background-color: #ffffff;
   margin: 5%;
 }
 
@@ -145,7 +151,7 @@ h3 {
 }
 
 .mid-text-flex p {
-  color: #ffffff;
+  color: #000000;
 }
 
 .mid-text-flex a {
@@ -176,7 +182,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   color: white;
-  background-color: #000000;
+  background-color: #ffffff;
   margin: 5%;
 }
 
@@ -237,12 +243,14 @@ h3 {
 </style>
 
 <div class="title-container">
-  <div class="flex-title">
+  {#if ready}
+  <div transition:fly={{ x: 200, duration: 2000 }} class="flex-title">
     <h2> <mark><strong>Hi, I'm Obinna.</strong></mark> A writer with a love for technology </h2>
   </div>
-  <div class="flex-image">
-  <img class="banner-img" src={Banner} alt="Obinna_mic">
-  </div>
+    <div transition:fly={{ x: -200, duration: 2000 }} class="flex-image">
+      <img class="banner-img" src={Banner} alt="Obinna_mic">
+    </div>
+  {/if}
 </div>
 
 <!-- triple column section -->

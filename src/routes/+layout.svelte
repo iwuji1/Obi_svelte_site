@@ -9,7 +9,7 @@ import '$lib/styles/style.scss'
 
 * {
   font-family: sans-serif;
-  background-color: #000000;
+  /* background-color: #000000; */
 }
 
 .container {
