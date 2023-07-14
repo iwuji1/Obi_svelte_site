@@ -281,7 +281,7 @@ svg {
       <p> When you research facts about the continent of Africa, many of the webpages tend to be bland and static.
       Through this project I attempted to remodel a standard table of African independence into something a bit more interactive</p>
       <h4>Tools: Svelte, Illustrator, D3, GSAP, javascript</h4>
-      <a href="https://joyful-starburst-06408d.netlify.app/"><button class="button-28" role="button">Go to Site</button></a>
+      <a href="https://africaindependence.netlify.app/"><button class="button-28" role="button">Go to Site</button></a>
       <a href="/blog/Africa-timeline-process"><button class="button-28" role="button">The Process</button></a>
     </div>
     <div class="mid-img">
