@@ -21,26 +21,16 @@ onMount(() => ready = true);
 
 .title-container {
   display: flex;
-  flex-wrap: wrap;
   text-align: left;
-  color: white;
-  background-color: #000000;
+  height: 70vh;
+  flex-direction: column;
 }
 
 .flex-title {
-  flex: 35%;
-  position: relative;
   align-self: center;
-  /* animation: title-ani 1s cubic-bezier(0.230, 1.000, 0.320, 1.000); */
+  justify-content: center;
+  margin-bottom: 50%;
 }
-
-/* style="background-color: #FF6600" */
-
-/* #highlight {
-  background-color: #FF6600;
-  animation: lit 0.5s forwards;
-  animation-delay: 1s;
-} */
 
 mark {
   color: #ffffff;
@@ -51,41 +41,13 @@ mark {
   background-position: 100% 0;
 }
 
-/* @keyframes title-ani {
-  0% {
-    left: -20%;
-    opacity: 0%;
-  }
-
-  100% {
-    left: 0%;
-    opacity: 100%;
-  }
-}
-
-@keyframes lit {
-  to {
-      background-position: 0 0;
-    }
-} */
-
 .flex-image {
   flex:50%;
   padding-left: 5px;
   margin: 0%;
-  /* animation: scale-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940); */
 }
 
-/* @keyframes scale-in {
-  0% {
-  transform: scaleX(0);
-  opacity: 1;
-}
-  100% {
-    transform: scaleX(1);
-    opacity: 1;
-  }
-} */
+
 
 .banner-img {
   width: 100%;
@@ -99,7 +61,11 @@ h2 {
 }
 
 h3 {
+  margin-left: 5%;
   color: #FF6600;
+  font-family: "Helvetica";
+  background: #faf2e8;
+  margin-right: 62%;
 }
 
 @media screen and (max-width:800px) {
@@ -174,7 +140,7 @@ h3 {
 }
 
 .page-img:hover {
-  transform: scale(1.2);
+  transform: scale(1.01);
   transform-origin: 50% 50%;
 }
 
@@ -243,14 +209,11 @@ h3 {
 </style>
 
 <div class="title-container">
-  {#if ready}
-  <div transition:fly={{ x: 200, duration: 2000 }} class="flex-title">
-    <h2> <mark><strong>Hi, I'm Obinna.</strong></mark> A writer with a love for technology </h2>
+  <div class="flex-title">
+    <h2> <strong>Hi, I'm Obinna.</strong> A writer with a love for technology </h2>
+
+    <h3><a href="/about">Learn More about me</a></h3>
   </div>
-    <div transition:fly={{ x: -200, duration: 2000 }} class="flex-image">
-      <img class="banner-img" src={Banner} alt="Obinna_mic">
-    </div>
-  {/if}
 </div>
 
 <!-- triple column section -->

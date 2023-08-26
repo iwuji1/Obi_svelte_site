@@ -5,7 +5,9 @@ date:   2021-05-27 22:40:01 +0100
 categories:
   - "Data"
 description: One of my first times trying out d3 and I decide to look at plastics
-image: "/assets/mini-logo.png"
+coverImage: "/assets/mini-logo.png"
+coverWidth: 3
+coverHeight: 3
 ---
 
 One of my first Data Mondays using D3

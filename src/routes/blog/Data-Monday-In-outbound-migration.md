@@ -5,7 +5,9 @@ date:   2021-05-27 22:40:01 +0100
 categories:
   - "Data"
 description: Using d3geo to make interactive maps
-image: "/assets/mini-logo.png"
+coverImage: "/assets/mini-logo.png"
+coverWidth: 3
+coverHeight: 3
 ---
 
 Here we go! Another monday, Another viz, this time I am trying out making maps using d3 and geojson data. Maps are always awesome, on a previous viz I used mapbox to make a map, and while it worked, when using it within a larger scroll story I found it difficult to use, so I wanted to see what I could do with d3, and this monday gave me that opportunity.

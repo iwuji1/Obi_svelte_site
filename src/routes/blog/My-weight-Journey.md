@@ -5,7 +5,9 @@ date:   2021-05-27 22:40:01 +0100
 categories:
   - "Everyday"
 description: This is a short desription test
-image: "/assets/mini-logo.png"
+coverImage: "/assets/mini-logo.png"
+coverWidth: 3
+coverHeight: 3
 ---
 
 I have been through journey when it comes to my weight, one thing I have learnt is that no matter how hard you try no one will ever be satisfied with your weight, so you should just stop and make sure you are good enough for yourself.

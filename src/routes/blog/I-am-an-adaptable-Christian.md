@@ -4,8 +4,11 @@ title:  "I am an Adaptable Christian"
 date:   2021-05-27 22:40:01 +0100
 categories:
   - "Everyday"
+  - "Me"
 description: This is a short desription test
-image: "/assets/mini-logo.png"
+coverImage: "/assets/mini-logo.png"
+coverWidth: 3
+coverHeight: 3
 ---
 
 A question I get asked every now and then is what type of Christian are you? Now you may be wondering, who on earth would ask you such a personal question? Who would be that nosey?

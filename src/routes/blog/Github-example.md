@@ -5,7 +5,9 @@ date:   2021-05-27 22:40:01 +0100
 categories:
   - "Data"
 description: This is a short desription test
-image: "/assets/mini-logo.png"
+coverImage: "/assets/mini-logo.png"
+coverWidth: 3
+coverHeight: 3
 ---
 
 One of my longer data Monday's my first actual data journalism piece looking at Disney movies. I was more focused on the visual than the actual story though

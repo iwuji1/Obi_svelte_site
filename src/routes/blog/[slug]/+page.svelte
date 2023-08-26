@@ -12,14 +12,6 @@ li {
   padding-left: 0;
 }
 
-h1 {
-  margin-left: 5%;
-  font-size: 40px;
-  font-weight: 100;
-  text-align: center;
-  font-family: "Helvetica";
-}
-
 h2 {
   color: #FF6600;
 }
@@ -60,11 +52,10 @@ h2 {
 
 
   .posts {
-    width: 40%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 25%;
-    /* margin-right: 15%; */
+    margin: auto;
   }
 
   @media screen and (max-width:800px) {
@@ -113,8 +104,9 @@ h2 {
   }
 
   .feat-img {
-    padding-top: 5%;
-    width: 100%;
+    width: 50%;
+    height: auto;
+    margin: auto;
   }
 
   .feat-text {
@@ -126,29 +118,29 @@ h2 {
 </style>
 
 <div class="container">
-  <div class="side-bar">
-    <h2 class="sb-title">Categories</h2>
-      <ul>
-        <li class="side-link"><a href="/blog">All Writing</a></li>
-        <li class="side-link"><a href="/blog/category/Everyday">Everyday Writing</a></li>
-        <li class="side-link"><a href="/blog/category/Poetry">Feelings & Poetry</a></li>
-        <li class="side-link"><a href="/blog/category/Data">Data Stories</a></li>
-      </ul>
-
-    <h2 class="sb-title">More Links</h2>
-      <ul>
-        <li class="side-link"><a href="/about">About Me</a></li>
-        <li class="side-link"><a href="/portfolio">Portfolio</a></li>
-        <li class="side-link"><a href="/now">Now Page</a></li>
-        <li class="side-link"><a href="#">Afripple</a></li>
-      </ul>
-  </div>
   <div class="posts">
     <article>
-      <img class="feat-img" src={data.image} alt="Featured_image">
+      <img class="feat-img" src={data.coverImage} alt="Featured_image">
       <h1 class="banner">{ data.title }</h1>
       <p>Published: {data.date}</p>
       <p class="text"><svelte:component this={data.content} /></p>
     </article>
   </div>
 </div>
+
+
+
+{#if data.categories}
+  <aside class="post-footer">
+    <h2>Posted in: </h2>
+    <ul>
+      {#each data.categories as category}
+        <li>
+          <a href="/blog/category/{category}/">
+            { category }
+          </a>
+        </li>
+      {/each}
+    </ul>
+  </aside>
+{/if}

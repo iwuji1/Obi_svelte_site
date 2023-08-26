@@ -1,5 +1,5 @@
 <script>
-  import Profile from '$lib/assets/Obinna Home picture.jpg'
+  import Profile from '$lib/assets/Obinna_Portrait.jpg'
   import Afripple from '$lib/assets/Afripple logo.png'
   import DataStory from '$lib/assets/Data_stories.png'
   import Explainer from '$lib/assets/Africa Explainer banner 2.png'
@@ -44,8 +44,6 @@ h3 {
 
 .sec-text {
   flex: 50%;
-  padding-left: 10%;
-  padding-right: 10%;
   font-size: 18px;
   font-weight: 200;
 }
@@ -53,10 +51,12 @@ h3 {
 .sec-img {
   flex: 50%;
   align-self: center;
+  padding-left: 10%;
 }
 
 .profile-img {
   width: 100%;
+  border-radius: 5%;
 }
 
 @media screen and (max-width:800px) {

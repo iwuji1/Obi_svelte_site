@@ -1,10 +1,13 @@
 ---
 title:  "Happyman Foods Website Summary"
-date:   2022-01-10 22:40:01 +0100
+date:   "2022-01-10"
 categories:
   - "Portfolio"
+  - "Data"
 description: This description of the process and technology I used to create the Africa Independence timeline
-image: "/assets/Africa_independence_1.jpeg"
+coverImage: "/assets/Africa_independence_1.jpeg"
+coverWidth: 3
+coverHeight: 3
 ---
 Here is the link to the site: https://joyful-starburst-06408d.netlify.app/
 

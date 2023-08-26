@@ -4,7 +4,9 @@ date:   2022-01-12 22:40:01 +0100
 categories:
   - "Portfolio"
 description: This description of the process and technology I used to create the Happyman Foods website
-image: "/assets/Happyman_PC-2.jpg"
+coverImage: "/assets/Happyman_PC-2.jpg"
+coverWidth: 3
+coverHeight: 3
 ---
 
 Here is the link to the site: https://www.happymanfoods.com

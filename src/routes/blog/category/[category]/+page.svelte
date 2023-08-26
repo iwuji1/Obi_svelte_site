@@ -1,5 +1,7 @@
 <script>
 export let data
+import Pagination from '$lib/components/Pagination.svelte'
+import { siteDescription } from '$lib/config'
 </script>
 
 <svelte:head>
@@ -8,9 +10,6 @@ export let data
 
 <style>
 
-* {
-  font-family: "Helvetica";
-}
 
 li {
   list-style: none;
@@ -18,58 +17,33 @@ li {
 }
 
 h1 {
-  margin-left: 5%;
-  font-size: 40px;
-  font-weight: 100;
   text-align: center;
-  font-family: "Helvetica";
 }
 
 h2 {
   color: #FF6600;
 }
+
 .container {
   display: flex;
 }
 
-.side-bar {
-  width: 20%;
-  margin-left: 10%;
-  padding-bottom: 10%;
-  margin-bottom: 10%;
-  position: fixed;
-  z-index: 1; /* Stay on top */
-  height: 25vh;
+img {
+  width: auto;
+  height: 5%;
 }
 
-.side-link {
-  font-weight: bold;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.side-link a{
-  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%,#FF6600 50%);
-  background-position: -0% 0;
-  background-size: 200% auto;
-  color: #000000;
-  text-decoration: none;
-  transition: background-position 200ms ease-out;
-
-}
-
-.side-link a:hover {
-  background-position: -99.99% 0;
-  color: #ffffff;
+p {
+  text-align: left;
+  font-size: 1rem;
 }
 
 
   .posts {
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 25%;
-    /* margin-right: 15%; */
+    margin: auto;
   }
 
   @media screen and (max-width:800px) {
@@ -82,10 +56,6 @@ h2 {
 
     .post {
       flex: 100%;
-    }
-
-    .side-bar {
-      visibility: hidden;
     }
 
     .post-img {
@@ -105,24 +75,17 @@ h2 {
     padding: 2%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-  }
-
-  .post-img {
-
-  }
-
-  .post-text {
-    text-align: center;
-
+    text-align: left;
   }
 
   .feat-img {
     width: 100%;
+    height: auto;
+    border-radius: 5%;
   }
 
   .feat-text {
-    font-weight: 100;
+    font-size: 1.5rem;
     font-family: "Helvetica";
     text-decoration: none;
   }
@@ -131,37 +94,23 @@ h2 {
 <h1>{data.category}</h1>
 
 <div class="container">
-  <div class="side-bar">
-    <h2 class="sb-title">Categories</h2>
-      <ul>
-        <li class="side-link"><a href="/blog">All Writing</a></li>
-        <li class="side-link"><a href="/blog/category/Everyday">Everyday Writing</a></li>
-        <li class="side-link"><a href="/blog/category/Poetry">Feelings & Poetry</a></li>
-        <li class="side-link"><a href="/blog/category/Data">Data Stories</a></li>
-      </ul>
-
-    <h2 class="sb-title">More Links</h2>
-      <ul>
-        <li class="side-link"><a href="/about">About Me</a></li>
-        <li class="side-link"><a href="/portfolio">Portfolio</a></li>
-        <li class="side-link"><a href="/now">Now Page</a></li>
-        <li class="side-link"><a href="#">Afripple</a></li>
-      </ul>
-  </div>
   <div class="posts">
     {#each data.posts as post}
       <div class="post">
         <div class="post-img">
           <a href={post.path}>
-            <img class="feat-img" src={post.meta.image} alt="Featured_image">
+            <img class="feat-img" src={post.meta.coverImage} alt="Featured_image">
           </a>
         </div>
         <div class="post-text">
           <a href={post.path}>
           <h2 class="feat-text">{post.meta.title}</h2>
           </a>
+          <p>{post.meta.description}</p>
         </div>
       </div>
       {/each}
   </div>
 </div>
+
+<Pagination currentPage={1} totalPosts={data.total} />
