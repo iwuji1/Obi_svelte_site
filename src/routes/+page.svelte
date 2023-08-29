@@ -1,5 +1,4 @@
 <script>
-import Banner from '$lib/assets/Face_chart cropped 2.png'
 import DataStory from '$lib/assets/Data_stories.png'
 import Writing from '$lib/assets/Daily Writing.jpeg'
 import Afripple from '$lib/assets/Afripple logo v2.png'
@@ -21,40 +20,19 @@ onMount(() => ready = true);
 
 .title-container {
   display: flex;
-  text-align: left;
-  height: 70vh;
+  text-align: center;
   flex-direction: column;
 }
 
 .flex-title {
   align-self: center;
   justify-content: center;
-  margin-bottom: 50%;
 }
 
-mark {
-  color: #ffffff;
-  animation: 1s lit 0.5s 1 normal forwards;
-  background-color: none;
-  background: linear-gradient(90deg, #FF6600 50%, rgba(0, 0, 0, 0) 50%);
-  background-size: 200% 100%;
-  background-position: 100% 0;
-}
-
-.flex-image {
-  flex:50%;
-  padding-left: 5px;
-  margin: 0%;
-}
-
-
-
-.banner-img {
-  width: 100%;
-}
 
 h2 {
-  margin-left: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
   font-size: 50px;
   font-weight: 200;
   font-family: "Helvetica";
@@ -62,10 +40,8 @@ h2 {
 
 h3 {
   margin-left: 5%;
-  color: #FF6600;
+  color: var(--accent);
   font-family: "Helvetica";
-  background: #faf2e8;
-  margin-right: 62%;
 }
 
 @media screen and (max-width:800px) {
@@ -75,19 +51,14 @@ h3 {
     width: 100%;
   }
 
+  h3 {
+      margin-right: 0%;
+      margin-left: 0%;
+  }
+
   .flex-title {
     flex:100%;
     height: 50vh;
-  }
-
-  .flex-image {
-    flex: 100%;
-    padding: 0;
-  }
-
-  .banner-img {
-    width: 100%;
-    height: auto;
   }
 
 }
@@ -95,6 +66,7 @@ h3 {
 .sec-1-container {
   text-align: center;
   font-size: 38px;
+  background: var(--lightAccent);
 }
 
 .sec-2-container {
@@ -121,7 +93,7 @@ h3 {
 }
 
 .mid-text-flex a {
-  color: #FF6600;
+  color: var(--accent);
 }
 
 .mid-image-flex {
@@ -179,13 +151,14 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: var(--lightAccent);
 }
 
 .sec-item {
   display: flex;
   flex-direction: row-reverse;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 80vh;
   margin: 2%;
 }
 
@@ -210,15 +183,26 @@ h3 {
 
 <div class="title-container">
   <div class="flex-title">
-    <h2> <strong>Hi, I'm Obinna.</strong> A writer with a love for technology </h2>
+    <b>Hi, I'm Obinna.</b>
+    <h2>A writer with a love for technology </h2>
+    <button class="button-28" role="button">Learn More About Me</button>
+  </div>
 
-    <h3><a href="/about">Learn More about me</a></h3>
+  <div class="box">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </div>
 </div>
 
 <!-- triple column section -->
 <div class="sec-1-container">
-<h3> Things I'm working on </h3>
+<h1> Things I'm working on </h1>
 </div>
 
 <div class="sec-4-container">

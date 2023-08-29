@@ -128,7 +128,7 @@ h3 {
 </div>
 
 <div class="projects">
-<h2 class="center">My Projects</h2>
+<h1 class="center">My Projects</h1>
   <div class="proj-card">
     <div class="proj-img">
       <img class="card-img" src={Afripple} alt="Afripple logo">

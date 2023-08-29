@@ -1,0 +1,116 @@
+@use './vars';
+
+.title-container {
+  background: var(--lightAccent);
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+
+  /* CSS */
+  .button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: var(--accent);
+    cursor: pointer;
+    display: inline-block;
+    font-family: var(--primaryFont);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 35%;
+    will-change: transform;
+
+    &:disabled {
+      pointer-events: none;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: var(--accent);
+      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      box-shadow: none;
+      transform: translateY(0);
+    }
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  b {
+    font-size: 80px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000000;
+     letter-spacing: 8px;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  .box ul li {
+  	position: absolute;
+  	width: 35px;
+  	height: 35px;
+  	list-style: none;
+  	opacity: 0;
+  	background: radial-gradient(var(--accent), transparent, transparent);
+  	bottom: 0;
+  	left: 10vw;
+    z-index: 1;
+  	animation: animate 15s linear infinite;
+  }
+
+  .box ul li:nth-child(2) {
+  	left: 36vw;
+  	animation-delay: 2s;
+  }
+  .box ul li:nth-child(3) {
+    	left: 22vw;
+    	animation-delay: 4s;
+    }
+  .box ul li:nth-child(4) {
+    	left: 56vw;
+    	animation-delay: 6s;
+    }
+  .box ul li:nth-child(5) {
+    	left: 76vw;
+    	animation-delay: 4s;
+    }
+  .box ul li:nth-child(6) {
+  	left: 80vw;
+  	animation-delay: 8s;
+  }
+  @keyframes animate {
+    	0% {
+    		transform: scale(0);
+    		opacity: 1;
+    		bottom: 0;
+    	}
+
+      80%{
+       opacity: 0.7;
+     }
+    	100% {
+    		transform: scale(random(10));
+    		opacity: 0;
+    		bottom: 100vh;
+    	}
+    }
+}

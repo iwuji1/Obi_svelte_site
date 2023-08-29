@@ -1,3 +1,4 @@
+@use './home-background';
 @use './typography';
 @use './layout';
 @use './components';
@@ -7,6 +8,12 @@
 @use './utilities';
 @use './code';
 @use './prism';
+@use './portfolio-slider';
+
+* {
+	margin: 0;
+	padding: 0;
+}
 
 *:focus {
 	outline: 2px solid var(--accent);

@@ -40,11 +40,3 @@ export const prerender = true
   {/key}
   <Footer />
 </div>
-<!-- <Header />
-<Analytics />
-
-<div class="container">
-<slot></slot>
-</div>
-
-<Footer /> -->
