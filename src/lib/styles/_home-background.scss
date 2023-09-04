@@ -51,6 +51,22 @@
     }
   }
 
+  h1 {
+    font-size: 80px;
+    text-align: center;
+    font-family: "Helvetica";
+
+    &::after {
+  		content: '';
+  		height: 0.1em;
+  		background: var(--accent);
+  		width: 20%;
+  		margin-left: -50%;
+  		position: absolute;
+  		bottom: 0;
+  	}
+  }
+
   h2 {
     text-align: center;
   }

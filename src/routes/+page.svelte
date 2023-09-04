@@ -10,10 +10,35 @@ import { onMount } from 'svelte';
 
 	onMount(() => {
     gsap.registerPlugin(TextPlugin);
+    gsap.registerPlugin(ScrollTrigger);
     let tl = gsap.timeline();
     tl.from("b", {duration: 1, text: ""});
     tl.from("h2" ,{x:-100, ease:"expo", duration: 1, autoAlpha:0});
     gsap.from(".button-28", {y:50, ease: "expo.in", duration: 2, autoAlpha:0});
+
+    let panels = gsap.utils.toArray(".item");
+
+    let tops = panels.map(panel => ScrollTrigger.create({trigger: panel, start: "top top"}));
+
+    panels.forEach((panel, i) => {
+      ScrollTrigger.create({
+        trigger: panel,
+        start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom", // if it's shorter than the viewport, we prefer to pin it at the top
+        pin: true,
+        pinSpacing: false
+      });
+    });
+
+    ScrollTrigger.create({
+      snap: {
+        snapTo: (progress, self) => {
+          let panelStarts = tops.map(st => st.start), // an Array of all the starting scroll positions. We do this on each scroll to make sure it's totally responsive. Starting positions may change when the user resizes the viewport
+              snapScroll = gsap.utils.snap(panelStarts, self.scroll()); // find the closest one
+          return gsap.utils.normalize(0, ScrollTrigger.maxScroll(window), snapScroll); // snapping requires a progress value, so convert the scroll position into a normalized progress value between 0 and 1
+        },
+        duration: 0.5
+      }
+    });
   })
 
 </script>
@@ -21,6 +46,7 @@ import { onMount } from 'svelte';
 <svelte:head>
 <title>Home Page</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
 </svelte:head>
 
@@ -36,7 +62,6 @@ import { onMount } from 'svelte';
   align-self: center;
   justify-content: center;
 }
-
 
 h2 {
   margin-left: 2%;
@@ -165,9 +190,10 @@ h3 {
 .sec-item {
   display: flex;
   flex-direction: row-reverse;
-  width: auto;
-  height: 80vh;
-  margin: 2%;
+  width: 100vw;
+  height: 90vh;
+  margin: 0%;
+  background: var(--lightAccent);
 }
 
 @media screen and (max-width:800px) {
@@ -189,9 +215,9 @@ h3 {
 
 </style>
 
-<div class="title-container">
+<div class="title-container item">
   <div class="flex-title">
-    <b>Hi, I'm Obinna.</b>
+    <h1>Hi, I'm Obinna.</h1>
     <h2>A writer with a love for technology </h2>
     <button class="button-28" role="button" href='/about'>Learn More About Me</button>
   </div>
@@ -209,12 +235,12 @@ h3 {
 </div>
 
 <!-- triple column section -->
-<div class="sec-1-container">
+<div class="sec-1-container item">
 <h1> Things I'm working on </h1>
 </div>
 
 <div class="sec-4-container">
-  <div class="sec-item">
+  <div class="sec-item item">
     <div class="mid-image-flex">
       <img class="page-img" src={Afripple} alt="Writing_graphic" href="https://afripple.co.uk/">
     </div>
@@ -224,7 +250,7 @@ h3 {
       about other people's business this could be a good resource for you</p>
     </div>
   </div>
-  <div class="sec-item">
+  <div class="sec-item item">
     <div class="mid-image-flex">
       <img class="page-img" src={Logo} alt="Writing_graphic">
     </div>
@@ -233,7 +259,7 @@ h3 {
       <p>A book about finding my voice through poetry and getting out there</p>
     </div>
   </div>
-  <div class="sec-item">
+  <div class="sec-item item">
     <div class="mid-image-flex">
       <img class="page-img" src={Explainer} alt="Writing_graphic" href="https://www.youtube.com/channel/UCv9oSIKjvzJYpICLBuAaVOw">
     </div>
