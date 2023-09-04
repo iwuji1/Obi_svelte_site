@@ -1,19 +1,27 @@
 <script>
-import DataStory from '$lib/assets/Data_stories.png'
-import Writing from '$lib/assets/Daily Writing.jpeg'
-import Afripple from '$lib/assets/Afripple logo v2.png'
-import Explainer from '$lib/assets/Africa Explainer.png'
-import Logo from '$lib/assets/mini-logo.png'
+import DataStory from '$lib/assets/Data_stories.png';
+import Writing from '$lib/assets/Daily Writing.jpeg';
+import Afripple from '$lib/assets/Afripple logo v2.png';
+import Explainer from '$lib/assets/Africa Explainer.png';
+import Logo from '$lib/assets/mini-logo.png';
 
+import gsap from 'gsap';
 import { onMount } from 'svelte';
-import { fly } from 'svelte/transition';
 
-let ready = false;
-onMount(() => ready = true);
+	onMount(() => {
+    gsap.registerPlugin(TextPlugin);
+    let tl = gsap.timeline();
+    tl.from("b", {duration: 1, text: ""});
+    tl.from("h2" ,{x:-100, ease:"expo", duration: 1, autoAlpha:0});
+    gsap.from(".button-28", {y:50, ease: "expo.in", duration: 2, autoAlpha:0});
+  })
+
 </script>
 
 <svelte:head>
 <title>Home Page</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
 </svelte:head>
 
 <style>
@@ -185,7 +193,7 @@ h3 {
   <div class="flex-title">
     <b>Hi, I'm Obinna.</b>
     <h2>A writer with a love for technology </h2>
-    <button class="button-28" role="button">Learn More About Me</button>
+    <button class="button-28" role="button" href='/about'>Learn More About Me</button>
   </div>
 
   <div class="box">
