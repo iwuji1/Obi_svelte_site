@@ -5,7 +5,7 @@ date:   2021-05-27 22:40:01 +0100
 categories:
   - "Data"
 description: Using d3geo to make interactive maps
-coverImage: "/assets/mini-logo.png"
+coverImage: "/assets/Data Monday Logo.png"
 coverWidth: 3
 coverHeight: 3
 ---

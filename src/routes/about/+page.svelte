@@ -1,7 +1,8 @@
 <script>
   import Profile from '$lib/assets/Obinna_Portrait.jpg'
   import Afripple from '$lib/assets/Afripple logo.png'
-  import DataStory from '$lib/assets/Data_stories.png'
+  import Afripple2 from '$lib/assets/Afripple logo v2.png';
+  import DataStory from '$lib/assets/Data_Stories_logo.png'
   import Explainer from '$lib/assets/Africa Explainer banner 2.png'
 </script>
 
@@ -131,13 +132,13 @@ h3 {
 <h1 class="center">My Projects</h1>
   <div class="proj-card">
     <div class="proj-img">
-      <img class="card-img" src={Afripple} alt="Afripple logo">
+      <img class="card-img" src={Afripple2} alt="Afripple logo">
     </div>
     <div class="proj-text">
       <h3><a href="https://afripple.co.uk/">Afripple blog / podcast</a></h3>
       <p class="text">I talk alot! It's a hobby if I'm honest. A good chunk of that is asking questions both to google and actual people.
       When I first graduated from University a big question is how does life actually work for people like me. Afripple is a blog
-      dedicated to the everyday stories of Africans living outside of their home country. If you are as curious as I am about
+      dedicated to the everyday success tories of Africans living outside of their home country. If you are as curious as I am about
       about other people's business this could be a good resource for you</p>
     </div>
   </div>
@@ -155,7 +156,7 @@ h3 {
     </div>
   </div>
 
-  <div class="proj-card">
+  <!-- <div class="proj-card">
     <div class="proj-img">
       <img class="card-img" src={Explainer} alt="Africa Explainer Banner">
     </div>
@@ -169,9 +170,9 @@ h3 {
       <br>
       This is an attempt to rectify that in a fun way. Thus the birth of the African Explainer :D</p>
     </div>
-  </div>
+  </div> -->
 
-  <div class="proj-card">
+  <!-- <div class="proj-card">
     <div class="proj-img">
       <img class="card-img" src={Afripple} alt="Poetry image">
     </div>
@@ -181,5 +182,5 @@ h3 {
       funny to serious, life stories to random musings; all important for me to develop this
       practice so that one day I can go from self proclaimed to actual. Hope you enjoy</p>
     </div>
-  </div>
+  </div> -->
 </div>

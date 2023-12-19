@@ -5,7 +5,7 @@ date:   2021-05-27 22:40:01 +0100
 categories:
   - "Data"
 description: One of my first times trying out d3 and I decide to look at plastics
-coverImage: "/assets/mini-logo.png"
+coverImage: "/assets/Data Monday Logo.png"
 coverWidth: 3
 coverHeight: 3
 ---

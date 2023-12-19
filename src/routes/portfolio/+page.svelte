@@ -1,6 +1,6 @@
 <script>
   export let data
-  import DataStory from '$lib/assets/Data_stories.png'
+  import DataStory from '$lib/assets/Data_Stories_logo.png'
   import { onMount } from 'svelte';
 
   console.log(data)
@@ -36,7 +36,7 @@ h1 {
       <div class="carousel-caption">
         <h3>Data Stories</h3>
         <p>I post data socials on instagram, take a look at the different stories</p>
-        <button class="button-28" role="button">See Me</button>
+        <a href="/blog/category/Data"><button class="button-28" role="button">See Me</button></a>
       </div>
     </div>
     {#each data.posts as post,i}
@@ -45,7 +45,7 @@ h1 {
         <div class="carousel-caption">
           <h3>{post.meta.title}</h3>
           <p>{post.meta.description}</p>
-          <button class="button-28" role="button" href={post.path}>See Me</button>
+          <a href={post.path}><button class="button-28" role="button">See Me</button></a>
         </div>
       </div>
     {/each}

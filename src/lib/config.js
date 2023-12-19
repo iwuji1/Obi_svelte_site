@@ -23,7 +23,7 @@ export const navItems = [
 		route: '/now'
 	},{
 		title: 'Portfolio',
-		route: '/portfolio'
+		route: '/blog/category/Portfolio'
 	}, {
 		title: 'Contact',
 		route: '/contact'

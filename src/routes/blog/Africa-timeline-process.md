@@ -1,5 +1,5 @@
 ---
-title:  "Happyman Foods Website Summary"
+title:  "African Independence Timeline"
 date:   "2022-01-10"
 categories:
   - "Portfolio"
@@ -9,7 +9,7 @@ coverImage: "/assets/Africa_independence_1.jpeg"
 coverWidth: 3
 coverHeight: 3
 ---
-Here is the link to the site: https://joyful-starburst-06408d.netlify.app/
+Here is the link to the site: https://africatimeline.afripple.co.uk/
 
 ## Summary of the project
 
@@ -25,4 +25,4 @@ During this project I used GSAP to handle the animations on the pages as well as
 
 ***Tools: D3, Javascript, SvelteKit, GSAP, Illustrator***
 
-Here is the link to the site: https://joyful-starburst-06408d.netlify.app/
+Here is the link to the site: https://africatimeline.afripple.co.uk/

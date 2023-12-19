@@ -9,36 +9,7 @@ import gsap from 'gsap';
 import { onMount } from 'svelte';
 
 	onMount(() => {
-    gsap.registerPlugin(TextPlugin);
-    gsap.registerPlugin(ScrollTrigger);
-    let tl = gsap.timeline();
-    tl.from("b", {duration: 1, text: ""});
-    tl.from("h2" ,{x:-100, ease:"expo", duration: 1, autoAlpha:0});
-    gsap.from(".button-28", {y:50, ease: "expo.in", duration: 2, autoAlpha:0});
 
-    let panels = gsap.utils.toArray(".item");
-
-    let tops = panels.map(panel => ScrollTrigger.create({trigger: panel, start: "top top"}));
-
-    panels.forEach((panel, i) => {
-      ScrollTrigger.create({
-        trigger: panel,
-        start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom", // if it's shorter than the viewport, we prefer to pin it at the top
-        pin: true,
-        pinSpacing: false
-      });
-    });
-
-    ScrollTrigger.create({
-      snap: {
-        snapTo: (progress, self) => {
-          let panelStarts = tops.map(st => st.start), // an Array of all the starting scroll positions. We do this on each scroll to make sure it's totally responsive. Starting positions may change when the user resizes the viewport
-              snapScroll = gsap.utils.snap(panelStarts, self.scroll()); // find the closest one
-          return gsap.utils.normalize(0, ScrollTrigger.maxScroll(window), snapScroll); // snapping requires a progress value, so convert the scroll position into a normalized progress value between 0 and 1
-        },
-        duration: 0.5
-      }
-    });
   })
 
 </script>
@@ -219,10 +190,10 @@ h3 {
   <div class="flex-title">
     <h1>Hi, I'm Obinna.</h1>
     <h2>A writer with a love for technology </h2>
-    <button class="button-28" role="button" href='/about'>Learn More About Me</button>
+    <a href="/about"><button class="button-28" role="button">Learn More About Me</button></a>
   </div>
 
-  <div class="box">
+  <!-- <div class="box">
     <ul>
       <li></li>
       <li></li>
@@ -231,7 +202,7 @@ h3 {
       <li></li>
       <li></li>
     </ul>
-  </div>
+  </div> -->
 </div>
 
 <!-- triple column section -->
@@ -246,7 +217,7 @@ h3 {
     </div>
     <div class="mid-text-flex">
       <h3><a href="https://afripple.co.uk/">Podcast</a></h3>
-      <p> Afripple is a podcast dedicated to the everyday stories of Africans living outside of their home country. If you are as curious as I am about
+      <p> Afripple is a podcast dedicated to the everyday success stories of Africans living outside of their home country. If you are as curious as I am about
       about other people's business this could be a good resource for you</p>
     </div>
   </div>
